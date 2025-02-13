@@ -185,3 +185,21 @@ height: auto;
   color: #999;
 }
 
+ .app-image {
+      max-width: 200px; /* Adjust width */
+      height: auto;
+    }
+    .app-images-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    @media (max-width: 768px) {
+      .app-images-wrapper {
+        flex-direction: column;
+      }
+      .app-image {
+        max-width: 50%; /* Reduce size on smaller screens */
+      }
+    }
